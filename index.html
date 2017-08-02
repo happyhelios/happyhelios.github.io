@@ -4,35 +4,83 @@
     <title>EMMA Persons</title>
 </head>
 
+<!-- nline-block is different from block -->
+
+<style>
+    h2 {
+        text-align: center;
+        margin: 1cm;
+        padding: 1cm;
+        border: 20px;
+    }
+    
+    #research {
+        color: red
+    }
+    
+    .my-detail {
+        color: aqua
+    }
+    
+    .background {
+        background-color: grey
+    }
+    
+    div {
+        width: 200px;
+        height: 150px;
+        overflow: hidden
+    }
+    
+    span {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+    }
+</style>
+</style>
+
 <body>
-    <ul>
-        <h2>Ke Yu</h2>
-        <IMG SRC="http://www.pkusz.edu.cn/uploadfile/2016/1219/20161219012652227.png"></IMG>
-        <li>Ph.D., Assistant Professor</li>
-        <li>Department of Environment and Energy, Shenzhen Graduation School, Peking University </li>
-        <li>Email: yuke@pkusz.edu.cn</li>
-        <li><a href="http://see.pkusz.edu.cn/index.php?m=content&c=index&a=show&catid=1653&id=32">Personal page in SEE department</a></li>
 
-        <h2>Biography</h2>
-        <li>Dr. Ke Yu has a bachelor's degree in Biological Sciences from Wuhan University in China. He obtained his master’s degree in Hydrobiology from Chinese Academy of Sciences and Ph.D. degree in Environmental Engineering from the University of Hong
-            Kong. His dissertation was focused on developing of methodology of meta-omics (metagenomics, metatranscriptomics, metabolomics, etc.) to interpret the material exchange and bacterial interaction occurring among community member during microbial
-            mediated biodegradation process. After his Ph.D. defense. Before joining in as an Assistant Professor at the Environment and Energy Department at Peking University Shenzhen Graduate School, he worked as a postdoctoral fellow the University
-            of California at Berkeley in the Department of Civil and Environmental Engineering where he investigated material exchange and microbial interaction in important anaerobic bacteria (e.g TCE-decholorinating bacteria and anaerobic ammonium oxidation
-            (anammox) bacteria) by using multi-omics and genomics techniques.
-        </li>
+    <h2 style="color:green; font-size: 28px">Ke Yu</h2>
+    <IMG SRC="http://www.pkusz.edu.cn/uploadfile/2016/1219/20161219012652227.png"></IMG>
+    <li>Ph.D., Assistant Professor</li>
+    <li>Department of Environment and Energy, Shenzhen Graduation School, Peking University </li>
+    <li>Email: yuke@pkusz.edu.cn</li>
+    <li><a href="http://see.pkusz.edu.cn/index.php?m=content&c=index&a=show&catid=1653&id=32">Personal page in SEE department</a></li>
 
-        <h2>Primary Reseach Field</h2>
-        <li>Envieronmental Microbiology</li>
-        <li>Environmental Microbial Genomics</li>
-        <li>Systematic multi-omics analysis methodology</li>
+    <h2 style="text-align: center">Biography</h2>
+    <li>Dr. Ke Yu has a bachelor's degree in Biological Sciences from Wuhan University in China. He obtained his master’s degree in Hydrobiology from Chinese Academy of Sciences and Ph.D. degree in Environmental Engineering from the University of Hong Kong.
+        His dissertation was focused on developing of methodology of meta-omics (metagenomics, metatranscriptomics, metabolomics, etc.) to interpret the material exchange and bacterial interaction occurring among community member during microbial mediated
+        biodegradation process. After his Ph.D. defense. Before joining in as an Assistant Professor at the Environment and Energy Department at Peking University Shenzhen Graduate School, he worked as a postdoctoral fellow the University of California
+        at Berkeley in the Department of Civil and Environmental Engineering where he investigated material exchange and microbial interaction in important anaerobic bacteria (e.g TCE-decholorinating bacteria and anaerobic ammonium oxidation (anammox)
+        bacteria) by using multi-omics and genomics techniques.
+    </li>
 
-        <h2>Fringer print</h2>
+    <h2 id="research">Primary Reseach Field</h2>
+    <li>Envieronmental Microbiology</li>
+    <li>Environmental Microbial Genomics</li>
+    <li>Systematic multi-omics analysis methodology</li>
+
+    <ul class="background">
+        <h2 class="my-detail">Fringer print</h2>
         <li>Bioinformatics</li>
         <li>Biotransformation</li>
 
-        <h2>Selected Resaerch Output</h2>
+        <h2 class="my-detail">Selected Resaerch Output</h2>
 
     </ul>
+
+    <div>
+        div1
+        <span>span1</span>
+        <span>span2</span>
+    </div>
+
+    <div>
+        div2
+        <span>span3</span>
+    </div>
 </body>
 
 </html>
