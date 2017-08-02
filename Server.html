@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Omics App</title>
+    <link rel="stylesheet" media="all" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" data-turbolinks-track="true" />
+    <script src="bootstrap-3.3.7-dist/css/bootstrap.min.js" data-turbolinks-track="true"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="yOojp0PzLVzD5ykCy1hHP8eLEtKLACi9Ig2Al8/65sLU6yhIdb3XsYkSamsCIqZdo4ubu7dWQH7vjSs+ixdZFQ==" />
+    <!--[if lt IE 9]>  <![endif]-->
+    <script src="bootstrap-3.3.7-dist/css/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+    #account {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        /* overflow: hidden; */
+    }
+    
+    @media (min-width: 300px) and (max-width: 1500px) {
+        #welc-fig {
+            width: 80%;
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+</style>
+
+<body>
+    <nav class='navbar navbar-inverse navbar-fixed-top'>
+        <div class='container-fluid'>
+            <div class='navbar-header'>
+                <button aria-controls='navbar' aria-expanded='false' class='navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+                <a class='navbar-brand' href='/myPanel'>EMMA Server</a>
+                <a class='navbar-brand' href='/projects'>Projects</a>
+            </div>
+            <div class='navbar-collapse collapse' id='navbar'>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li class='dropdown'>
+                        <a aria-expanded='false' class='dropdown-toggle' data-toggle='dropdown' href='#Files' role='button'>
+Files
+<span class='caret'></span>
+</a>
+                        <ul class='dropdown-menu' role='menu'>
+                            <li><a href="/omicfiles">All My Files</a></li>
+                            <li class='divider'></li>
+                            <li>
+                                <a href='#'>FQC Files</a>
+                            </li>
+                            <li>
+                                <a href='#'>IDBA Files</a>
+                            </li>
+                            <li class='divider'></li>
+                            <li><a href="/omicfiles/new">Upload Files</a></li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'>
+                        <a aria-expanded='false' class='dropdown-toggle' data-toggle='dropdown' href='#FastQC' role='button'>
+Quality control
+<span class='caret'></span>
+</a>
+                        <ul class='dropdown-menu' role='menu'>
+                            <li><a href="/qualitytasks">All FQC Task</a></li>
+                            <li class='divider'></li>
+                            <li><a href="/qualitytasks/new">New FQC Task</a></li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'>
+                        <a aria-expanded='false' class='dropdown-toggle' data-toggle='dropdown' href='#Anal' role='button'>
+Assembly
+<span class='caret'></span>
+</a>
+                        <ul class='dropdown-menu' role='menu'>
+                            <li><a href="/idbatasks/new">IDBA</a></li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'>
+                        <a aria-expanded='false' class='dropdown-toggle' data-toggle='dropdown' href='#Anal' role='button'>
+
+Binning
+<span class='caret'></span>
+</a>
+                        <ul class='dropdown-menu' role='menu'>
+                            <li><a href="/idbatasks/new">IDBA</a></li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'>
+                        <a aria-expanded='false' class='dropdown-toggle' data-toggle='dropdown' href='#Anal' role='button'>
+                            
+Annotation
+<span class='caret'></span>
+</a>
+                        <ul class='dropdown-menu' role='menu'>
+                            <li><a href="/blasttasks/new">Blast</a></li>
+                        </ul>
+                    </li>
+                    <li class='dropdown' id='fat-menu'>
+                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                            <img alt="Ke Yu" id="account" class="gravatar img-circle" src="https://secure.gravatar.com/avatar/c84046f106bc4d429337f01ab374702c" /> Ke Yu
+                            <b class='caret'></b>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a href="/users/2">Profile</a></li>
+                            <li><a href="/users/2/edit">Settings</a></li>
+                            <li class='divider'></li>
+                            <li>
+                                <a rel="nofollow" data-method="delete" href="/signout">Sign out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class='container-fluid'>
+        <!-- <img src="https://github.com/happyhelios/happyhelios.github.io/blob/master/binning.png?raw=true"></img> -->
+        <img id="welc-fig" alt="Hey, you" src="binning.png" align="middle">
+
+        <div class='col-md-6 col-md-offset-3'>
+
+        </div>
+    </div>
+    <footer class='footer'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-1'>
+                    <img alt='北大' src='/assets/pu_logo_100x-152a9ecee15b3123436facefbcd1be6c6a72d261f68263c9f5d7782d775159e1.png'>
+                </div>
+                <div class='col-md-1 col-md-offset-1'>
+                    <img alt='Auckland' src='/assets/UOA-NT-VC_100x-7b596a6e26603a0aca5f66afbbc106a2158ed03954156c1d804a2c9d23ed77d5.png'>
+                </div>
+                <div class='col-md-1 col-md-offset-1'>
+                    <img alt='' class='img-circle' src='/assets/ykphoto-ce3a00509a9d6684fa7e402ba7bf5fcdad757dc6c23aadf39edfe33095aec633.jpg' style='width: 80px; height: 80px; margin-top: 10px;'>
+                </div>
+                <div class='col-md-3'>
+                    <h5 class='text-left'>Dr. Ke Yu</h5>
+                    <p class='text-left small'>Assistant Professor at School of Environment and Energy Peking Univesity <br \>Email: yuke@pkusz.edu.cn</p>
+                </div>
+                <div class='col-md-1'>
+                    <img alt='' class='img-circle' src='/assets/wqzphoto-01fe7c8b66518551fda2e765ad531fa1d329d03a92f65959defb89a36596ae49.jpg' style='width: 80px; height: 80px; margin-top: 10px;'>
+                </div>
+                <div class='col-md-3'>
+                    <h5 class='text-left'>Dr. Wei-Qin Zhuang</h5>
+                    <p class='text-left small'>Senior Lecturer at Civil and Environmental Engineering Auckland University <br \>Email: wq.zhuang@auckland.ac.nz</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
